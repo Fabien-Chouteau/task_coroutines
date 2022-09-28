@@ -1,0 +1,13 @@
+name = "tests"
+description = "Shiny new project"
+version = "0.0.0"
+
+authors = ["Fabien Chouteau"]
+maintainers = ["Fabien Chouteau <fabien.chouteau@gmail.com>"]
+maintainers-logins = ["Fabien-Chouteau"]
+
+executables = ["tests"]
+[[depends-on]]  # Added by alr
+task_coro = "~0.0.0"  # Added by alr
+[[pins]]  # Added by alr
+task_coro = { path='../../task_coro' }   # Added by alr
