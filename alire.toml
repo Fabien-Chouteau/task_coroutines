@@ -1,6 +1,6 @@
-name = "task_coro"
+name = "task_coroutines"
 description = "Shiny new project"
-version = "0.0.0"
+version = "0.1.0-dev"
 
 authors = ["Fabien Chouteau"]
 maintainers = ["Fabien Chouteau <fabien.chouteau@gmail.com>"]

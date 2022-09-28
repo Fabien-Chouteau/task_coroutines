@@ -1,7 +1,7 @@
 with Ada.Synchronous_Task_Control; use Ada.Synchronous_Task_Control;
 with Ada.Task_Identification;
 
-package body Task_Coro.Coroutine is
+package body Task_Coroutines.Coroutine is
 
    -----------
    -- Yield --
@@ -80,7 +80,7 @@ package body Task_Coro.Coroutine is
    -- Poll --
    ----------
 
-   procedure Poll (This : in out Instance; Dt : Duration) is
+   procedure Poll (This : in out Instance; Dt : Duration := 0.0) is
    begin
       if This.Done then
          return;
@@ -135,4 +135,4 @@ package body Task_Coro.Coroutine is
       Set_True (Ctrl.Outer.Suspend);
    end Coro_Task;
 
-end Task_Coro.Coroutine;
+end Task_Coroutines.Coroutine;

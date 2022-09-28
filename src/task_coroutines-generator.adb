@@ -2,7 +2,7 @@ with Ada.Synchronous_Task_Control; use Ada.Synchronous_Task_Control;
 
 with Ada.Task_Identification;
 
-package body Task_Coro.Generator is
+package body Task_Coroutines.Generator is
 
    -----------
    -- Yield --
@@ -192,4 +192,4 @@ package body Task_Coro.Generator is
       end loop;
    end Coro_Task;
 
-end Task_Coro.Generator;
+end Task_Coroutines.Generator;

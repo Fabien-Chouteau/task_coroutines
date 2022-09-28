@@ -2,7 +2,7 @@ private with Ada.Synchronous_Task_Control;
 
 generic
    type T is private;
-package Task_Coro.Generator
+package Task_Coroutines.Generator
 with Preelaborate
 is
 
@@ -23,6 +23,8 @@ is
                     Proc : not null Generator_Proc);
    procedure Stop (This : in out Instance);
    function  Done (This : Instance) return Boolean;
+
+   -- Iterable --
 
    type Cursor_Type is null record;
 
@@ -62,4 +64,4 @@ private
       Suspend : Ada.Synchronous_Task_Control.Suspension_Object;
    end record;
 
-end Task_Coro.Generator;
+end Task_Coroutines.Generator;

@@ -1,10 +1,11 @@
 private with Ada.Synchronous_Task_Control;
 
-package Task_Coro.Coroutine
+package Task_Coroutines.Coroutine
 with Preelaborate
 is
 
-   type Inner_Control is tagged limited private;
+   type Inner_Control
+   is tagged limited private;
 
    procedure Yield (This : in out Inner_Control);
 
@@ -25,7 +26,7 @@ is
                     Proc : not null Coro_Proc);
 
    procedure Stop (This : in out Instance);
-   procedure Poll (This : in out Instance; Dt : Duration);
+   procedure Poll (This : in out Instance; Dt : Duration := 0.0);
    function  Done (This : Instance) return Boolean;
 
 private
@@ -55,4 +56,4 @@ private
       Suspend : Ada.Synchronous_Task_Control.Suspension_Object;
    end record;
 
-end Task_Coro.Coroutine;
+end Task_Coroutines.Coroutine;
