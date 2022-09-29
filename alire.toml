@@ -1,5 +1,5 @@
 name = "task_coroutines"
-description = "Shiny new project"
+description = "Coroutines and generators using only standard tasking features"
 version = "0.1.0-dev"
 licenses = "MIT"
 tags = ["coroutine", "generator"]
