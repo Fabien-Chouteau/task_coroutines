@@ -33,7 +33,8 @@ is
    function Next (This : in out Instance) return T;
    function First (This : Instance) return Cursor_Type;
    function Next (This : in out Instance; C : Cursor_Type) return Cursor_Type;
-   function Has_Element (This : in out Instance; C : Cursor_Type) return Boolean;
+   function Has_Element (This : in out Instance; C : Cursor_Type)
+                         return Boolean;
    function Element (This : in out Instance; C : Cursor_Type) return T;
 
 private

@@ -119,7 +119,9 @@ package body Task_Coroutines.Generator is
    -- Next --
    ----------
 
-   function Next (This : in out Instance; C : Cursor_Type) return Cursor_Type is
+   function Next (This : in out Instance; C : Cursor_Type)
+                  return Cursor_Type
+   is
    begin
       case This.Inner.State is
          when Waiting =>
@@ -136,7 +138,9 @@ package body Task_Coroutines.Generator is
    -- Has_Element --
    -----------------
 
-   function Has_Element (This : in out Instance; C : Cursor_Type) return Boolean is
+   function Has_Element (This : in out Instance; C : Cursor_Type)
+                         return Boolean
+   is
    begin
       return This.Has_Next;
    end Has_Element;

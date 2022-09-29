@@ -32,7 +32,7 @@ package body Task_Coroutines.Coroutine is
    -------------------
 
    procedure Delay_Seconds (This : in out Inner_Control; Dur : Duration) is
-      Expire_Time : Duration := This.Clock + Dur;
+      Expire_Time : constant Duration := This.Clock + Dur;
    begin
       while This.Clock < Expire_Time loop
          This.Yield;

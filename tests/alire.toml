@@ -13,3 +13,6 @@ task_coroutines = "*"
 
 [[pins]]
 task_coroutines = { path = ".." }
+
+[build-profiles]
+task_coroutines = "Validation"
