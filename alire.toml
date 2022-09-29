@@ -1,6 +1,6 @@
 name = "task_coroutines"
 description = "Shiny new project"
-version = "0.1.0-dev"
+version = "0.1.0"
 licenses = "MIT"
 tags = ["coroutine", "generator"]
 website = "https://github.com/Fabien-Chouteau/task_coroutines"
