@@ -6,7 +6,7 @@ on:                    # Run the workflow for each of the following event:
     types: [created]   # - A release is created.
 
 jobs:
-  main:
+  release:
     runs-on: ubuntu-latest
 
     steps:
